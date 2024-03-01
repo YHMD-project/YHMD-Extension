@@ -1,0 +1,25 @@
+{
+  "name": "yhmd",
+  "displayName": "YHMD",
+  "description": "a language support extension for YHMD",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "yhmd",
+      "aliases": ["yhmd", "yhmd"],
+      "extensions": [".yhmd"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "yhmd",
+      "scopeName": "source.yhmd",
+      "path": "./syntaxes/yhmd.tmLanguage.json"
+    }]
+  }
+}
