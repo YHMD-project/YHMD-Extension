@@ -1,6 +1,7 @@
 {
   "name": "yhmd",
   "displayName": "YHMD",
+  "publisher": "yixing",
   "description": "a language support extension for YHMD",
   "version": "0.0.1",
   "engines": {
@@ -10,16 +11,31 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "yhmd",
-      "aliases": ["yhmd", "yhmd"],
-      "extensions": [".yhmd"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "yhmd",
-      "scopeName": "source.yhmd",
-      "path": "./syntaxes/yhmd.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "yhmd",
+        "aliases": [
+          "yhmd",
+          "yhmd"
+        ],
+        "extensions": [
+          ".yhmd"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "yhmd",
+        "scopeName": "source.yhmd",
+        "path": "./syntaxes/yhmd.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "yhmd",
+        "path": "./snippets/yhmd.code-snippets"
+      }
+    ]
   }
 }

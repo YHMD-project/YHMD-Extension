@@ -1,0 +1,167 @@
+{
+    // ? 回转轴系
+    "rotary_axis":{
+        "prefix": ["rotary_axis","回转轴"],
+        "body":[
+            "\\rotary_axis[$1]{$2}"
+        ],
+        "description": "rotary_axis"
+    },
+
+    // ? 轴肩
+    // shaft_shoulder[<diameter>,<length>]{<sons>}
+    "shaft_shoulder":{
+        "prefix": ["shaft_shoulder","shoulder","轴肩"],
+        "body":[
+            "\\shaft_shoulder[",
+            "\tdiameter = $1,",
+            "\tlength = $2,",
+            "\t]{$3}",
+            "$0"
+        ],
+        "description": "shaft_shoulder"
+    },
+    
+    // ? 轴套
+    // shaft_sleeve[<inner_diameter>,<external_diameter>,<length>]{<sons>}
+    "shaft_sleeve":{
+        "prefix": ["shaft_sleeve","sleeve","轴套"],
+        "body":[
+            "\\shaft_sleeve[",
+            "\tinner_diameter = $1,",
+            "\texternal_diameter = $2,",
+            "\tlength = $3,",
+            "\t]{$4}",
+            "$0"
+        ],
+        "description": "shaft_sleeve"
+    },
+
+    // ? 螺纹
+    // screw_thread[<base_size>,<pitch>,<rotation>,<line_number>,<length>]{<sons>}
+    "screw_thread":{
+        "prefix": ["screw_thread","thread","螺纹"],
+        "body":[
+            "\\screw_thread[",
+            "\tbase_size = ${1:M1},",
+            "\tpitch = ${2:0.25},",
+            "\trotation = ${3:RH},",
+            "\tline_number = ${4:1},",
+            "\tlength = $5,",
+            "\t]{$6}",
+            "$0"
+        ],
+        "description": "screw_thread"
+    },
+
+    // ? 矩形花键
+    // rec_spilne[<num>,<d>,<D>,<width>,<length>]{<sons>}
+    "rec_spilne":{
+        "prefix": ["rec_spilne","矩形花键"],
+        "body":[
+            "\\rec_spilne[",
+            "\tnum = $1,",
+            "\td = $2,",
+            "\tD = $3,",
+            "\twidth = $4,",
+            "\tlength = $5,",
+            "\t]{$6}",
+            "$0"
+        ],
+        "description": "rec_spilne"
+    },
+
+    // ? 键槽
+    // keyway[<baseSize>,<keywayType>,<length>]{<sons>}
+    "keyway":{
+        "prefix": ["keyway","键槽"],
+        "body":[
+            "\\keyway[",
+            "\tbaseSize = $1,",
+            "\tkeywayType = ${2:flatKey},",
+            "\tlength = $3,",
+            "\t]{$4}",
+            "$0"
+        ],
+        "description": "keyway"
+    },
+
+    // ? 渐开线花键
+    // inv_spline[<module>,<diameter>,<alpha>,<length>]{<sons>}
+    "inv_spline":{
+        "prefix": ["inv_spline","渐开线花键"],
+        "body":[
+            "\\inv_spline[",
+            "\tmodule = $1,",
+            "\tdiameter = $2,",
+            "\talpha = $3,",
+            "\tlength = $4,",
+            "\t]{$5}",
+            "$0"
+        ],
+        "description": "inv_spline"
+    },
+
+    // ? 轴承内圈
+    // bearing_inner[<baeringType>,<bearingNumber>,<innerDiameter>,<externalDiameter>,<length>]{<sons>}
+    "bearing_inner":{
+        "prefix": ["bearing_inner","轴承内圈"],
+        "body":[
+            "\\bearing_inner[",
+            "\tbaering_type = ${1:cylindricalRollerBearings},",
+            "\tbearing_number = ${2:NU202},",
+            "\tinner_diameter = ${3:15},",
+            "\textenal_diameter = ${4:35},",
+            "\tlength = ${5:11},",
+            "\t]{$6}",
+            "$0"
+        ],
+        "description": "bearing_inner"
+    },
+
+    // ? 轴承外圈
+    // bearing_outer[<baeringType>,<bearingNumber>,<innerDiameter>,<externalDiameter>,<length>]{<sons>}
+    "bearing_outer":{
+        "prefix": ["bearing_outer","轴承外圈"],
+        "body":[
+            "\\bearing_outer[",
+            "\tbaering_type = ${1:cylindricalRollerBearings},",
+            "\tbearing_number = ${2:NU202},",
+            "\tinner_diameter = ${3:15},",
+            "\textenal_diameter = ${4:35},",
+            "\tlength = ${5:11},",
+            "\t]{$6}",
+            "$0"
+        ],
+        "description": "bearing_outer"
+    },
+
+    // ? 齿轮
+    // gear[<module>,<z>,<innerDiameter>,<length>]{<sons>}
+    "gear":{
+        "prefix": ["gear","齿轮"],
+        "body":[
+            "\\gear[",
+            "\tmodule = ${1:12},",
+            "\tz = $2,",
+            "\tinner_diameter = $3,",
+            "\tlength = $4,",
+            "\t]{$5}",
+            "$0"
+        ],
+        "description": "gear"
+    },
+
+    // ? 圆柱槽
+    "cylindrical_groove":{
+        "prefix": ["cylindrical_groove","圆柱槽"],
+        "body":[
+            "\\cylindrical_groove[",
+            "\tdepth = $1,",
+            "\tlength = $2,",
+            "\t]{$3}",
+            "$0"
+        ],
+        "description": "cylindrical_groove"
+    },
+}
